@@ -17,6 +17,9 @@
 .gallery > img {
     flex: 0 5 auto;
     margin: 8px;
+    width: 200px;
+    height: auto;
+    
 }
 
 .infoWrapper{
