@@ -1,6 +1,6 @@
 .projectTemplate {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -18,18 +18,15 @@
     width: auto; 
     height: 100%; 
     object-fit: contain;
-    flex-grow: 10%;
 }
 
 .projectTemplate > div {
     align-content: left;
     margin: 5%;
-    flex-grow: 80%;
 }
 
 .projectTemplate > a {
     margin: 5%;
-    flex-grow: 10%;
 }
 
 .projectButton {
