@@ -41,8 +41,6 @@ body {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
-  background-image: url(images/water.PNG);
-  background-repeat: repeat;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
