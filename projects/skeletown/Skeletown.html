@@ -29,8 +29,12 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="../../carousel.css" rel="stylesheet">
+    <link href="../../css/carousel.css" rel="stylesheet">
     <link href="../../css/projectBio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -59,6 +63,7 @@
                   <ul class="dropdown-menu">
                     <li><a href="../skeletown/Skeletown.html">Skeletown</a></li>
                     <li role="separator" class="divider"></li>
+                    <li><a href="../fromScratch/FromScratch.html">From: Scratch</li>
                   </ul>
                 </li>
               </ul>
@@ -155,16 +160,181 @@
             <h2>Galeria</h2>
           </div>
         <!--Galeria-->
-        <div id="gallery" class="gallery">
-          <img src="images/gameover_page.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/cosmetics.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/gameplay1.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/inventory.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/menus.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/pag_veg1.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/ropita.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/pag_en2.png" alt="https://dummyimage.com/200/000/fff">
-        </div>
+          <!--Principio de imagenes-->
+          <section>
+            <div class="container gal-container">
+              <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#1">
+                    <img src="images/gameover_page.png">
+                  </a>
+                  <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/gameover_page.png">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the first one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#2">
+                    <img src="images/cosmetics.jpg">
+                  </a>
+                  <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/cosmetics.jpg">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the second one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#3">
+                    <img src="images/gameplay1.jpg">
+                  </a>
+                  <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/gameplay1.jpg">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the third one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#4">
+                    <img src="images/inventory.png">
+                  </a>
+                  <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/inventory.png">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the fourth one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#5">
+                    <img src="images/menus.jpg">
+                  </a>
+                  <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/menus.jpg">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the fifth one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#6">
+                    <img src="images/pag_veg1.png">
+                  </a>
+                  <div class="modal fade" id="6" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/pag_veg1.png">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the sixth one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#7">
+                    <img src="images/ropita.jpg">
+                  </a>
+                  <div class="modal fade" id="7" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/ropita.jpg">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the seventh one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                <div class="box">
+                  <a href="#" data-toggle="modal" data-target="#8">
+                    <img src="images/pag_en2.png">
+                  </a>
+                  <div class="modal fade" id="8" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <img src="images/pag_en2.png">
+                        </div>
+                          <div class="col-md-12 description">
+                            <h4>This is the eighth one on my Gallery</h4>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!--Fin de imagenes-->
+
 
       </div>
 
