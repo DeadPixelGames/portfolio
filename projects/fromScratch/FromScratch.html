@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description"  content="">
@@ -31,147 +31,325 @@
     <!-- Custom styles for this template -->
     <link href="../../css/carousel.css" rel="stylesheet">
     <link href="../../css/projectBio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+    <section class = "bg-dark" style="background-image: url(../../images/From_Scratch_Wallpaper2.jpg)">
+      <div class="navbar-wrapper">
+        <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="../../index.html"><strong>DEAD PIXEL GAMES</strong> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand" href="../../index.html">DEAD PIXEL GAMES</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="../../index.html">Inicio</a></li>
-                <li><a href="../../aboutUs.html">Sobre nosotros</a></li>
-                <li><a href="../../index.html#contact">Contacto</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="../skeletown/Skeletown.html">Skeletown</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="projects/fromScratch/FromScratch.html">From: Scratch</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../aboutUs.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#contact">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Juegos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item text-secondary" href="../skeletown/Skeletown.html">Skeletown</a>
+                      <a class="dropdown-item text-secondary" href="FromScratch.html">From: Scratch</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
 
-      </div>
-    </div>
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <img src="images/base_blue.png" width="auto" height="300">
-                <div class="carousel-l">
-                 <h1>WELCOME TO SKELETOWN</h1>
-              </div>
-                </div>
-              
-            </div>
-          </div>
-          <div class="item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <img src="images/base_orange.png" width="auto" height="300">
-                <h1>WELCOME TO SKELETOWN</h1>
-              
-                <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <img src="../../logo/final_version/logo.png" width="auto" height="300">
-                <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
-              </div>
-            </div>
-          </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>
-      </div><!-- /.carousel -->
+      </div>
+
+      <!-- Carousel
+      ================================================== -->
+      <div class="container">
+          <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#main-carousel" data-slide-to="1"></li>
+            </ol><!-- /.carousel-indicators -->
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img class="rounded mx-auto d-block img-fluid" src="images/FromScratchLogo_500.png" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="text-info">From: Scratch</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="rounded mx-auto d-block img-fluid" src="images/base_orange.png" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>ENTRA EN ITCH.IO</h3>
+                  <p>¡El juego ya está disponible!</p>
+                </div>
+              </div>
+            </div><!-- /.carousel-inner -->
+            
+            <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only" aria-hidden="true">Prev</span>
+            </a>
+            <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only" aria-hidden="true">Next</span>
+            </a>
+          </div><!-- /.carousel -->
+        </div><!--/.container-->
+      </section>
 
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-      <!--Informacion-->
-      <div>
-
-        <div class="page-header">
-            <h1>From:<strong>Scratch</strong></h2>
-        </div>
-
-        <div>
-            <!--Descripcion y foto-->
-            <div class="infoWrapper Thumbnail">
-              <div>
-                <p>
-                  From: Scratch :description
-                </p>
+      <section>
+        <div class="container marketing">
+          <!--Informacion-->
+          <div>
+            <div>
+              <div class="page-header">
+                <h1>No leas un cómic<strong> ¡Juegalo!</strong></h2>
               </div>
-              <img src="../../images/calaverazas.png" alt="https://dummyimage.com/200/000/fff">
+            
+              <div class="container">
+                  <!--Descripcion y foto-->
+                  <div class="row">
+                    <div class="col-md-8 mb-5 my-auto showcase-text">
+                        <p align="justify">
+                        Skeletown es un juego de simulación de muerte para navegador, móvil y Facebook basado en prosperar en nuestro pequeño pueblo recolectando distintas y
+                        peculiares frutas y verduras, haciendo frente a enemigos, completando distintas misiones y personalizando nuestra apariencia y entorno mientras
+                        esperamos nuestro turno para la reencarnación. Se apoya en una estética y temática que pretende aunar lo oscuro y lo adorable, siempre en clave de
+                        humor, en un estilo que denominamos darkawaii (dark - oscuro en inglés y kawaii - adorable en japonés). La idea base es crear un mundo lleno de
+                        personalidad, vida y cosas por hacer dónde el jugador siempre tenga ganas de pasar un rato entretenido y prosperar poco a poco.
+                      </p>
+                    </div>
+    
+                    <div class="col-md-4 mb-5">
+                      <div class="container">
+                        <img src="../../images/calaverazas.png" class="img-fluid">
+                      </div>
+                    </div>               
+                            
+                  </div>
+    
+                  <div class="row">
+                    <div class="col">
+                      <h3><strong>Juega ya en Itch.io: </strong> <a href="https://deadpixelgames.itch.io/skeletown"> ¡Entra ya! </a></h3>
+                    </div>
+                  </div> 
+    
+              </div>
             </div>
-
-            <h3><strong>Juega ya en Itch.io: </strong> <a href="https://deadpixelgames.itch.io/skeletown"> ¡Entra ya! </a></h3>
-        </div>
-
-        <div class="page-header">
-            <h2>Galeria</h2>
           </div>
-        <!--Galeria-->
-        <div id="gallery" class="gallery">
-          <img src="images/gameover_page.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/cosmetics.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/gameplay1.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/inventory.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/menus.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/pag_veg1.png" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/ropita.jpg" alt="https://dummyimage.com/200/000/fff">
-          <img src="images/pag_en2.png" alt="https://dummyimage.com/200/000/fff">
         </div>
+      </section>
 
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2019 DeadPixelGames, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
+      <section class="bg-light">
+        <div class="container marketing">
+            <div class="page-header">
+                <h2>Galeria</h2>
+            </div>
+            <!--Galeria-->
+              <!--Principio de imagenes-->
+              <section>
+                <div class="container gal-container">
+                  <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#1">
+                        <img src="images/gameover_page.png">
+                      </a>
+                      <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/gameover_page.png">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4> Pantalla "Game Over"</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#2">
+                        <img src="images/cosmetics.jpg">
+                      </a>
+                      <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/cosmetics.jpg">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Concepts de accesorios</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#3">
+                        <img src="images/gameplay1.jpg">
+                      </a>
+                      <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/gameplay1.jpg">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Vista in-game del juego</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#4">
+                        <img src="images/inventory.png">
+                      </a>
+                      <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/inventory.png">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Diseño del inventario</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#5">
+                        <img src="images/menus.jpg">
+                      </a>
+                      <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/menus.jpg">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Pantalla principal del juego</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#6">
+                        <img src="images/pag_veg1.png">
+                      </a>
+                      <div class="modal fade" id="6" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/pag_veg1.png">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Concept del libro de los muertos: Calaveraza</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#7">
+                        <img src="images/ropita.jpg">
+                      </a>
+                      <div class="modal fade" id="7" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/ropita.jpg">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Diseño del menu de accesorios en el inventario</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                      <a href="#" data-toggle="modal" data-target="#8">
+                        <img src="images/pag_en2.png">
+                      </a>
+                      <div class="modal fade" id="8" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                              <img src="images/pag_en2.png">
+                            </div>
+                              <div class="col-md-12 description">
+                                <h4>Concept del libro de los muertos: Gran errante</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </section>
+              <!--Fin de imagenes-->
+  
+  
+        </div><!-- /.container -->
+        <div class="container marketing">
+          <!-- FOOTER -->
+          <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2019 DeadPixelGames, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </footer>
+        </div><!-- /.container -->
+      </section>
 
 
     <!-- Bootstrap core JavaScript
@@ -192,5 +370,11 @@
     <!--  <script src="../../assets/js/vendor/holder.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!--BOOTSTRAP 4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
 </html>

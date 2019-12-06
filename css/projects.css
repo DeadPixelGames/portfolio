@@ -1,32 +1,12 @@
 .projectTemplate {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
 
-    height: 100px;
+    height: 100pt;
 
     border-style: solid;
     border-color: rgb(139, 139, 139);
 
     background: #FFFFFF;
     background: linear-gradient(to bottom, #FFFFFF 0%, #ADADAD 100%);
-}
-
-.projectTemplate > img {
-    width: auto; 
-    height: 100%; 
-    object-fit: contain;
-}
-
-.projectTemplate > div {
-    align-content: left;
-    margin: 5%;
-}
-
-.projectTemplate > a {
-    margin: 5%;
 }
 
 .projectButton {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description"  content="">
@@ -30,88 +30,137 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/projects.css" rel="stylesheet">
+
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+    <section class="bg-dark">
+      <div class="navbar-wrapper">
+        <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="../index.html"><strong>DEAD PIXEL GAMES</strong> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand" href="../index.html">DEAD PIXEL GAMES</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="../index.html">Inicio</a></li>
-                <li><a href="../aboutUs.html">Sobre nosotros</a></li>
-                <li><a href="../index.html#contact">Contacto</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="skeletown/Skeletown.html">Skeletown</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="projects/fromScratch/FromScratch.html">From: Scratch</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../aboutUs.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Juegos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item text-secondary" href="skeletown/Skeletown.html">Skeletown</a>
+                      <a class="dropdown-item text-secondary" href="fromScratch/FromScratch.html">From: Scratch</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
 
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Colección de proyectos-->
-    <div id="allWrapper" class = "container marketing">
-      <div class="page-header">
-        <h1>Último proyecto <small>No te lo pierdas</small></h1>
-      </div>
-
-      <div id="lastProject" class="Thumbnail projectTemplate">
-        <img src="../images/calaverazas.png" alt="https://dummyimage.com/200/000/fff">
-        <div class="caption">
-          <h3>Skeletown</h3>
-          <p>Un juego simulador de muerte para pasar el rato con tus amigos...</p>
+    <section style="background-image: url(../images/From_Scratch_Wallpaper.jpg)">
+      <div id="allWrapper" class = "container marketing" style="background-color: rgba(255, 101, 101, 0.9)">
+        <div class="page-header">
+          <h1><strong>Último proyecto <small>No te lo pierdas</small></strong></h1>
         </div>
-        <a href="../projects/skeletown/Skeletown.html" class="projectButton">Descubre más</a>
-      </div>
 
-      <div>
+        <div id="lastProject" class="container">
+          <div class="row">
+            <div class="col-md-4 mb-5">
+              <div class="card h-100" style="overflow: hidden">
+                <img class="card-img-top" src="images/FromScratch_300.png">
+                <div class="card-body">
+                  <h4 class="card-title"><strong>From: Scratch</strong></h4>
+                  <p class="card-text">No leas más comics....<strong>¡juegalos!</strong></p>
+                </div>
+                <div class="card-footer">
+                  <a href="fromScratch/FromScratch.html" class="btn btn-primary"><strong>Descrubre más</strong></a>
+                </div>
+              </div>
+            </div>
 
-      </div>
+            <div class="col-md-8 mb-5 ">
+                <h2>¿De qué trata?</h2>
+                <hr>
+                <div class="my-auto showcase-text">
+                  <p align="justify" style="margin-right: 25px">From Scratch es un juego 2.5D donde manejas a un garabato dentro de comics y usas las onomatopeyas para pasarte los niveles resolviendo puzles. Dichos niveles están ambientados dentro del mundo del comic que escojamos de nuestra estantería virtual . </p>
+                  <p align="justify" style="margin-right: 25px">Tenemos pensado colaborar con grandes empresas dentro del mundo del comic y manga para poder traer los títulos más conocidos, como Superman, Batman, One Piece... Pero también buscamos cualquier cómic no tan conocido de autores independientes, ¡para así poder ayudar a que este consiga llegar a más gente y tener un catálogo más variado!</p>
+                </div>
+            </div>
 
-      <div class="page-header">
-        <h2>Todos nuestros proyectos</h2>
-      </div>
-
-      <div id="allProjectWrapper" class="Thumbnail projectTemplate">
-
-          <img src="../images/calaverazas.png" alt="https://dummyimage.com/200/000/fff">
-          <div class="caption">
-            <h3>Skeletown</h3>
-            <p>Un juego simulador de muerte para pasar el rato con tus amigos...</p>
           </div>
-          <a href="../projects/skeletown/Skeletown.html" class="projectButton">Descubre más</a>
-
+        </div>
       </div>
+    </section>
 
+    <section class="bg-light">
+      <div class="container marketing">
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2019 DeadPixelGames, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+        <div class="page-header">
+          <h2>Todos nuestros proyectos</h2>
+        </div>
 
-    </div><!-- /.container -->
+        <div id="allProjectWrapper" class="container"><!--Thumbnail projectTemplate-->
+          <div class="row">
 
+            <div class="col-md-4 mb-5">
+              <div class="card h-100" style="overflow: hidden">
+                <img class="card-img-top" src="images/FromScratch_300.png">
+                <div class="card-body">
+                  <h4 class="card-title"><strong>From: Scratch</strong></h4>
+                  <p class="card-text">No leas más comics....<strong>¡juegalos!</strong></p>
+                </div>
+                <div class="card-footer">
+                  <a href="fromScratch/FromScratch.html" class="btn btn-primary"><strong>Descrubre más</strong></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img class="card-img-top" src="images/base_blue_300.png">
+                <div class="card-body">
+                  <h4 class="card-title"><strong>Skeletown</strong></h4>
+                  <p class="card-text">¿Listo para la larga espera?</p>
+                </div>
+                <div class="card-footer">
+                  <a href="skeletown/Skeletown.html" class="btn btn-primary"><strong>Descrubre más</strong></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="container marketing">
+        <!-- FOOTER -->
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2019 DeadPixelGames, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+
+      </div><!-- /.container -->
+    </section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -131,5 +180,11 @@
     <!--  <script src="../../assets/js/vendor/holder.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!--BOOTSTRAP 4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
 </html>
